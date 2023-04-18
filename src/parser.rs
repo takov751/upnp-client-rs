@@ -696,7 +696,8 @@ pub fn deserialize_content_directory(xml: &str, ip: &str) -> Result<(Vec<Contain
                         }
                         if in_res
                             && item.url.is_empty()
-                            && value.contains(ip)
+// remove ip check 
+//                            && value.contains(ip)
                             && (item.protocol_info.contains("audio")
                                 || item.protocol_info.contains("video"))
                         {
