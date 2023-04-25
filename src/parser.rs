@@ -698,9 +698,9 @@ pub fn deserialize_content_directory(xml: &str, ip: &str) -> Result<(Vec<Contain
                             && item.url.is_empty()
 // remove ip check 
 //                            && value.contains(ip)
-                            && (item.protocol_info.contains("audio")
-                                || item.protocol_info.contains("video")
-                                || item.protocol_info.contains("image"))
+//                            && (item.protocol_info.contains("audio")
+//                                || item.protocol_info.contains("video")
+//                                || item.protocol_info.contains("image"))
                         {
                             item.url = value.clone();
                         }
